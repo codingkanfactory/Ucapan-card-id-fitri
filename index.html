@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Idul Fitri 1446 H</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- html2canvas for image generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="text-center mb-4">
+                    <h1 class="fw-bold main-title">Kartu Ucapan Idul Fitri 1446 H</h1>
+                    <p class="text-muted">Buat kartu ucapan Lebaran yang indah dengan warna pastel</p>
+                </div>
+
+                <!-- Input Form -->
+                <div id="input-form" class="card input-form shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3 text-center sub-title">Masukkan Nama Anda</h4>
+                        <div class="mb-3">
+                            <input type="text" id="name-input" class="form-control form-control-lg rounded-pill" placeholder="Nama Anda">
+                        </div>
+                        <div class="d-grid">
+                            <button id="generate-btn" class="btn btn-success btn-lg rounded-pill btn-generate">
+                                <i class="bi bi-wand-magic me-2"></i>Buat Kartu Ucapan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generated Card -->
+                <div id="card-result" class="hidden">
+                    <div class="card rounded-4 shadow border-0 card-container mb-3">
+                        <div class="card-body p-0">
+                            <div id="card-to-download" class="greeting-card rounded-4">
+                                <!-- Decorative Elements -->
+                                <div class="circle-decoration circle-1"></div>
+                                <div class="circle-decoration circle-2"></div>
+                                <div class="circle-decoration circle-3"></div>
+                                
+                                <!-- Lanterns -->
+                                <div class="lantern lantern-1"><i class="fas fa-star"></i></div>
+                                <div class="lantern lantern-2"><i class="fas fa-star"></i></div>
+                                <div class="lantern lantern-3"><i class="fas fa-star"></i></div>
+                                
+                                <!-- Card Content -->
+                                <div class="card-content text-center">
+                                    <div class="logo-placeholder">
+                                        <i class="bi bi-moon-stars-fill fs-1 text-white"></i>
+                                    </div>
+                                    
+                                    <div class="ketupat">
+                                        <i class="bi bi-diamond-fill"></i>
+                                        <i class="bi bi-diamond-fill"></i>
+                                        <i class="bi bi-diamond-fill"></i>
+                                    </div>
+                                    
+                                    <h2 class="mb-2 main-title fw-bold">Selamat Hari Raya</h2>
+                                    <h1 class="display-5 fw-bold sub-title mb-3">Idul Fitri 1446 Hijriah</h1>
+                                    
+                                    <p class="fs-5 mb-4 card-message">Taqabbalallahu minna wa minkum, shiyamana wa shiyamakum. Mohon maaf lahir dan batin.</p>
+                                    
+                                    <div class="name-badge">
+                                        <h4 id="display-name" class="mb-0 fw-bold">Nama Anda</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-3 d-flex justify-content-between">
+                            <button id="back-btn" class="btn btn-outline-secondary rounded-pill btn-back">
+                                <i class="bi bi-arrow-left me-1"></i> Kembali
+                            </button>
+                            <button id="create-image-btn" class="btn btn-primary rounded-pill btn-action">
+                                <i class="bi bi-image me-1"></i> Jadikan Gambar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Generated Image Container (will be shown after converting to image) -->
+                <div id="image-result" class="hidden generated-image-container">
+                    <img id="generated-image" class="generated-image" src="" alt="Kartu Ucapan Idul Fitri">
+                    <p class="image-hint">Tekan lama pada gambar dan pilih "Simpan Gambar" untuk mengunduh</p>
+                    <button id="back-to-card-btn" class="btn btn-outline-secondary mt-3 rounded-pill btn-back">
+                        <i class="bi bi-arrow-left me-1"></i> Kembali ke Kartu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="textsaya">CODINGKAN 25, WITH AI CREATION</div>
+                    <script type="module" src="script.js"></script>
+</body>
+</html>    
