@@ -1,0 +1,199 @@
+body {
+            background-color: #f0f7f4;
+            font-family: 'Quicksand', sans-serif;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239ae6b4' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .card-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .greeting-card {
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 50%, #ffd3b6 100%);
+            min-height: 450px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .card-content {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .circle-decoration {
+            position: absolute;
+            border-radius: 50%;
+        }
+        .circle-1 {
+            width: 80px;
+            height: 80px;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(255, 222, 173, 0.6);
+        }
+        .circle-2 {
+            width: 120px;
+            height: 120px;
+            bottom: -30px;
+            right: 40px;
+            background-color: rgba(175, 238, 238, 0.4);
+        }
+        .circle-3 {
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            left: 5%;
+            background-color: rgba(221, 160, 221, 0.3);
+        }
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffcfdf 0%, #b5f0f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 4px solid #fff;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .name-badge {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-top: 10px;
+            color: white;
+            position: relative;
+            z-index: 10;
+        }
+        .hidden {
+            display: none;
+        }
+        .ketupat {
+            font-size: 24px;
+            margin: 10px;
+            color: #78c2ad;
+        }
+        .main-title {
+            color: #5a8a7a;
+        }
+        .sub-title {
+            color: #4b8b8b;
+        }
+        .card-message {
+            color: #666;
+            line-height: 1.6;
+        }
+        .input-form {
+            background-color: white;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 20px;
+        }
+        .form-control {
+            border: 2px solid #e3f2fd;
+            padding: 12px 20px;
+            transition: all 0.3s;
+        }
+        .form-control:focus {
+            border-color: #a8e6cf;
+            box-shadow: 0 0 0 0.25rem rgba(168, 230, 207, 0.25);
+        }
+        .btn-generate {
+            background: linear-gradient(135deg, #78c2ad 0%, #5a8a7a 100%);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .btn-generate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #66b59a 0%, #4a7967 100%);
+        }
+        .btn-back {
+            background-color: #f8f9fa;
+            border: 2px solid #ddd;
+            color: #666;
+            padding: 10px 20px;
+            transition: all 0.3s;
+        }
+        .btn-back:hover {
+            background-color: #eaeaea;
+            border-color: #ccc;
+            color: #444;
+        }
+        .btn-action {
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .btn-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .card-footer {
+            border-radius: 0 0 20px 20px;
+        }
+        .lantern {
+            position: absolute;
+            font-size: 30px;
+            color: #ff9e80;
+            opacity: 0.8;
+            z-index: 1;
+            animation: float 3s ease-in-out infinite;
+        }
+        .lantern-1 {
+            top: 10%;
+            right: 10%;
+            animation-delay: 0s;
+        }
+        .lantern-2 {
+            top: 15%;
+            left: 10%;
+            animation-delay: 0.5s;
+        }
+        .lantern-3 {
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 1s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        /* Generated image container */
+        .generated-image-container {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .generated-image {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-hint {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+    .textsaya {
+        text-align: center;
+    }
